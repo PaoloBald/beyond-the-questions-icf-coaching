@@ -40,10 +40,15 @@ See `examples/` for full worked cases.
 
 ## How to use it
 
-### Claude (claude.ai, Claude Desktop, Claude Code)
-1. Download this repository as a ZIP (or zip the folder yourself).
-2. In Claude: **Settings → Capabilities → Skills → Upload skill** and upload the ZIP. (The menu location may change. See Anthropic's Help Center on Skills.)
-3. Start a chat: *"I'd like to reflect on a coaching session"* and paste your anonymized excerpt.
+### Claude (claude.ai, Claude Desktop)
+1. Make sure **Code execution and file creation** is enabled in Settings → Capabilities.
+2. Download the ready-made skill package: **[beyond-the-questions.zip](https://github.com/PaoloBald/beyond-the-questions-icf-coaching/releases/latest/download/beyond-the-questions.zip)**.
+   *Don't use GitHub's "Code → Download ZIP": its folder name doesn't match the skill name and the upload may fail.*
+3. In Claude, go to **Settings → Capabilities → Skills → Upload skill** and upload the ZIP, then switch the skill on. (The menu location may change. See Anthropic's Help Center on Skills.)
+4. Open a **new chat** (outside any Project with its own instructions) and write: *"I'd like to reflect on a coaching session"*, then paste your anonymized excerpt. To try it first, use the excerpt in `examples/case-01-delegation.md`.
+
+### Claude Code
+Copy this repository's folder to `~/.claude/skills/beyond-the-questions/`.
 
 ### ChatGPT
 - **Custom GPT:** paste `prompt/chatgpt-gpt-instructions.md` into *Instructions*, and upload `prompt/universal-system-prompt.md` as a knowledge file.
